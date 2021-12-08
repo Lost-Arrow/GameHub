@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import PlayImage from "../resources/play.png";
 import ChessImage from "../resources/chess.png";
 import SnakeImage from "../resources/snake.png";
+import GameImage from "../resources/game.jpg"
 
 import '../styles/homepage.css';
 
@@ -17,9 +18,9 @@ const NavigationBar = () => {
 
         <div className = "menu">
           <ul>
-            <li> <Link to = {"#play"}>Games</Link> </li>
-            <li> <Link to = {"#join"}>Join</Link> </li>
-            <li> <Link to = {"#rooms"}>Rooms</Link> </li>
+            <li> <a href = "#play">Games</a> </li>
+            <li> <a href = "#join">Join</a></li>
+            <li> <a href = "#rooms">Rooms</a> </li>
             <li> <Link to = {"/login"}>Login</Link> </li>
             <li> <Link to = {"/register"}>Register</Link> </li>
           </ul>
@@ -51,7 +52,7 @@ const Card = (props) => {
   return (
     <div className = {props.name}>
       <div className = "card_image">
-        <img src = {props.src} />
+        <img src = {props.src} alt = "card" />
         
         <div className = "card_title title-black">
           <p>{props.children}</p>
@@ -70,9 +71,9 @@ const Play = () => {
 
       <div className = "cards-list">
         <Card name = "card 1" src = {ChessImage}>Chess</Card>
-        <Card name = "card 2" src = {SnakeImage}>Snake</Card>
-        <Card name = "card 3" src = {""}>Random</Card>
-        <Card name = "card 4" src = {""}>Random</Card>
+        <Card name = "card 2" src = {SnakeImage}><Link to = {"/snake"}>Snake</Link></Card>
+        <Card name = "card 3" src = {GameImage}>Random</Card>
+        <Card name = "card 4" src = {GameImage}>Random</Card>
       </div>
     </div>
   );
@@ -89,7 +90,7 @@ const Join = () => {
         <form className = "room-number">
           <h3>Enter the room number you want to join:</h3>
           <input type = "text" className = "css-input" placeholder = "Room Code" style = {{textAlign: "center"}} />
-          <button type = "" className = "btn">Join</button>
+          <button className = "btn">Join</button>
         </form>
       </div>
     </div>
@@ -140,9 +141,9 @@ const Footer = () => {
 
         <div className = "quicklinks">
           <ul className = "footer-links">
-            <li> <Link to = {"#play"}>Games</Link> </li>
-            <li> <Link to = {"#join"}>Join</Link> </li>
-            <li> <Link to = {"#rooms"}>Rooms</Link> </li>
+            <li> <a href = "#play">Games</a> </li>
+            <li> <a href = "#join">Join</a> </li>
+            <li> <a href = "#rooms">Rooms</a> </li>
             <li> <Link to = {"/login"}>Login</Link> </li>
             <li> <Link to = {"/register"}>Register</Link> </li>
           </ul>

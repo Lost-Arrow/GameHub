@@ -1,11 +1,11 @@
 
-* {
+.RegisterPage * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-body {
+.RegisterPage {
   background: #e9ebee;
   display: flex;
   justify-content: center;
@@ -14,18 +14,18 @@ body {
   font-family: sans-serif;
 }
 
-.container {
+.RegisterPage .container {
   width: 80%;
   margin: auto;
   padding: 20px;
   height: 100%
 }
 
-.register, .login {
+.RegisterPage .register, .login {
   width: 50%
 }
 
-.register {
+.RegisterPage .register {
   float: left;
   background-color: #fafafa;
   height: 100%;
@@ -34,12 +34,12 @@ body {
   padding-top: 100px;
 }
 
-.register h1 {
+.RegisterPage .register h1 {
   margin-bottom: 40px;
   font-size: 2.5em;
 }
 
-input[type="email"], input[type="password"] {
+.RegisterPage input[type="email"], input[type="password"] {
   width: 100%;
   padding: 10px;
   margin-bottom: 30px;
@@ -47,26 +47,26 @@ input[type="email"], input[type="password"] {
   background-color: #eeeeef;
 }
 
-input[type="checkbox"] {
+.RegisterPage input[type="checkbox"] {
   float: left;
   margin-right: 5px;
 }
 
-.register span {
+.RegisterPage .register span {
   float: left
 }
 
-.register a {
+.RegisterPage .register a {
   float: right;
   text-decoration: none;
   color: #000;
 }
 
-.register a:hover {
+.RegisterPage .register a:hover {
   color: #ed60bc;
 }
 
-.register button {
+.RegisterPage .register button {
   width: 100%;
   margin: 30px 0;
   border-radius: 8px;
@@ -80,18 +80,18 @@ input[type="checkbox"] {
   border-width: 0
 }
 
-.register button:hover {
+.RegisterPage .register button:hover {
   background: #fc96d5;
   color: #fffdff !important;
   transition: none
 }
 
-.register p {
+.RegisterPage .register p {
   display: inline-block;
   margin: 0px 10px 30px;
 }
 
-.login {
+.RegisterPage .login {
   float: right;
   background-image: linear-gradient(135deg, #23212f 5%, #ed60bc 95%);
   height: 100%;
@@ -101,18 +101,18 @@ input[type="checkbox"] {
   padding: 120px 0;
 }
 
-.login h2 {
+.RegisterPage .login h2 {
   margin: 40px 0;
   font-size: 50px;
   letter-spacing: 3px
 }
 
-.login p {
+.RegisterPage .login p {
   font-size: 18px;
   margin-bottom: 40px;
 }
 
-.login a {
+.RegisterPage .login a {
   background-color: transparent;
   border: 1px solid #FFF;
   border-radius: 20px;
@@ -124,7 +124,7 @@ input[type="checkbox"] {
   text-decoration: none;
 }
 
-.login a:hover {
+.RegisterPage .login a:hover {
   color: #ed60bc;
   background-color: #fff;
   cursor: pointer;

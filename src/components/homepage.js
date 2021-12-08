@@ -7,7 +7,7 @@ import SnakeImage from "../resources/snake.png";
 
 import '../styles/homepage.css';
 
-const NavigationBar = (props) => {
+const NavigationBar = () => {
   return (
     <div>
       <nav className = "menu-container">
@@ -29,7 +29,7 @@ const NavigationBar = (props) => {
   );
 };
 
-const Hero = (props) => {
+const Hero = () => {
   return (
     <div className = "hero">
       <div className = "hero-content">
@@ -155,7 +155,7 @@ const Footer = () => {
 export default class HomePage extends React.Component {
   render () {
     return (
-      <div>
+      <div className = "HomePage">
         <NavigationBar />
         <Hero />
         <Play />

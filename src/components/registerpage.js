@@ -6,7 +6,7 @@ import '../styles/registerpage.css'
 export default class RegisterPage extends React.Component {
   render () {
     return (
-      <div>
+      <div className = "RegisterPage">
         <div className = "register">
           <div className = "container">
             <h1>Sign Up</h1>

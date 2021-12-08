@@ -1,11 +1,11 @@
-body {
+.HomePage {
   overflow-x: hidden;
   font-family: Sans-Serif;
   margin: 0;
-  padding: 0
+  padding: 0;
 }
 
-.menu-container {
+.HomePage .menu-container {
   position: relative;
   display: flex;
   align-items: center;
@@ -18,28 +18,28 @@ body {
   height: 10vh;
 }
 
-.menu-logo {
+.HomePage .menu-logo {
   line-height: 0;
   margin: 0 20px
 }
 
-.menu-logo img {
+.HomePage .menu-logo img {
   height: 80px;
   width: 100px;
   flex-shrink: 0
 }
 
-.menu-container a {
+.HomePage .menu-container a {
   text-decoration: none;
   color: #010101;
   transition: color .3s ease
 }
 
-.menu-container a:hover {
+.HomePage .menu-container a:hover {
   color: #ed60bc
 }
 
-.btn {
+.HomePage .btn {
   border-radius: 8px;
   text-shadow: 1px 1px 3px #666;
   font-family: Arial;
@@ -51,50 +51,50 @@ body {
   border-width: 0
 }
 
-.btn:hover {
+.HomePage .btn:hover {
   background: #fc96d5;
   color: #fffdff !important;
   transition: none
 }
 
-.menu ul {
+.HomePage .menu ul {
   list-style: none
 }
 
-.menu li {
+.HomePage .menu li {
   padding: 10px 0;
   font-size: 16px
 }
 
-.menu-container {
+.HomePage .menu-container {
   width: 100%
 }
 
-.menu-container a {
+.HomePage .menu-container a {
   color: #fffdff
 }
 
-.menu-container input {
+.HomePage .menu-container input {
   display: none
 }
 
-.menu {
+.HomePage .menu {
   position: relative;
   width: 100%;
   display: flex;
   justify-content: space-between
 }
 
-.menu ul {
+.HomePage .menu ul {
   display: flex;
   padding: 0
 }
 
-.menu li {
+.HomePage .menu li {
   padding: 0 20px
 }
 
-.hero {
+.HomePage .hero {
   position: relative;
   width: 100vw;
   height: 75vh;
@@ -103,7 +103,7 @@ body {
   align-items: center
 }
 
-.hero::before {
+.HomePage .hero::before {
   content: "";
   position: absolute;
   top: 0;
@@ -117,7 +117,7 @@ body {
   filter: brightness(60%)
 }
 
-.hero-content {
+.HomePage .hero-content {
   position: relative;
   width: 75%;
   text-align: left;
@@ -125,7 +125,7 @@ body {
   padding-left: 24px
 }
 
-.hero-title {
+.HomePage .hero-title {
   font-size: 32px;
   padding-bottom: 16px;
   font-weight: 800;
@@ -133,7 +133,7 @@ body {
   margin: 0
 }
 
-.hero-subtitle {
+.HomePage .hero-subtitle {
   font-size: 16px;
   color: #cfcfcf;
   padding-bottom: 16px;
@@ -141,12 +141,12 @@ body {
   margin-top: 1rem
 }
 
-.heading {
+.HomePage .heading {
   width: 100%;
   text-align: center
 }
 
-.div-title {
+.HomePage .div-title {
   font-size: 24px;
   text-decoration-line: underline;
   text-decoration-style: solid;
@@ -156,7 +156,7 @@ body {
   justify-content: center
 }
 
-.cards-list {
+.HomePage .cards-list {
   z-index: 0;
   width: 100%;
   display: flex;
@@ -164,7 +164,7 @@ body {
   flex-wrap: wrap
 }
 
-.card {
+.HomePage .card {
   margin: 30px auto;
   width: 300px;
   height: 300px;
@@ -174,20 +174,20 @@ body {
   transition: .4s
 }
 
-.card .card_image {
+.HomePage .card .card_image {
   width: inherit;
   height: inherit;
   border-radius: 40px
 }
 
-.card .card_image img {
+.HomePage .card .card_image img {
   width: inherit;
   height: inherit;
   border-radius: 40px;
   object-fit: cover
 }
 
-.card .card_title {
+.HomePage .card .card_title {
   text-align: center;
   border-radius: 0 0 40px 40px;
   font-family: sans-serif;
@@ -197,16 +197,16 @@ body {
   height: 40px
 }
 
-.card:hover {
+.HomePage .card:hover {
   transform: scale(.9, .9);
   box-shadow: 5px 5px 30px 15px rgba(0, 0, 0, .25), -5px -5px 30px 15px rgba(0, 0, 0, .22)
 }
 
-.title-black {
+.HomePage .title-black {
   color: #000
 }
 
-.join {
+.HomePage .join {
   height: 40vh;
   background-color: #f6f6f6;
   position: relative;
@@ -215,11 +215,11 @@ body {
   align-items: center
 }
 
-.join .heading h1 {
+.HomePage .join .heading h1 {
   padding-top: 16px
 }
 
-.css-input {
+.HomePage .css-input {
   padding: 4px;
   font-size: 16px;
   border-width: 1px;
@@ -231,11 +231,11 @@ body {
   box-shadow: 0 0 5px rgba(66, 66, 66, .75)
 }
 
-.css-input:focus {
+.HomePage .css-input:focus {
   outline: 0
 }
 
-.room-number {
+.HomePage .room-number {
   width: 100%;
   position: relative;
   display: flex;
@@ -244,11 +244,11 @@ body {
   padding-top: 20px
 }
 
-.room-number>* {
+.HomePage .room-number>* {
   margin-left: 20px
 }
 
-.site-footer {
+.HomePage .site-footer {
   background-color: #010101;
   padding: 45px 0 20px;
   font-size: 12px;
@@ -256,32 +256,32 @@ body {
   color: #737373
 }
 
-.footer-flex {
+.HomePage .footer-flex {
   display: flex;
   justify-content: space-around
 }
 
-.site-footer h6 {
+.HomePage .site-footer h6 {
   color: #cfcfcf;
   font-size: 16px;
   margin: 5px 0;
   letter-spacing: 2px
 }
 
-.site-footer a {
+.HomePage .site-footer a {
   color: #737373;
   text-decoration: none
 }
 
-.site-footer a:hover {
+.HomePage .site-footer a:hover {
   color: #ed60bc
 }
 
-.footer-links {
+.HomePage .footer-links {
   padding-left: 0;
   list-style: none
 }
 
-.footer-links li {
+.HomePage .footer-links li {
   display: block
 }

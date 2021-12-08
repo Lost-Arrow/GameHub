@@ -11,12 +11,12 @@ export default class App extends React.Component {
       <div className = "app">
         <BrowserRouter>
           <Routes>
-            <Route path = "/" element = {<HomePage />} />
-            <Route path = "/login" element = {<LoginPage />} />
-            <Route path = "/register" element = {<RegisterPage />} />
-            {/* <Route path = "/game/chess" element = {<Chess />} />
-            <Route path = "/game/snake" element = {<Snake />} />
-            <Route path = "/game/dinojump" element = {<DinoJump />} /> */}
+            <Route exact path = "/" element = {<HomePage />} />
+            <Route exact path = "/login" element = {<LoginPage />} />
+            <Route exact path = "/register" element = {<RegisterPage />} />
+            {/* <Route exact path = "/game/chess" element = {<div />} />
+            <Route exact path = "/game/snake" element = {<div />} />
+            <Route exact path = "/game/dinojump" element = {<div />} /> */}
           </Routes>
         </BrowserRouter>
       </div>

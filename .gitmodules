@@ -1,0 +1,3 @@
+[submodule "src/apps/snakejs"]
+	path = src/apps/snakejs
+	url = https://github.com/Lost-Arrow/snakejs

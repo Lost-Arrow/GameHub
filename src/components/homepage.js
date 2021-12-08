@@ -1,4 +1,8 @@
 import React from "react";
+import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+
+import LoginPage from "./loginpage";
+import RegisterPage from "./registerpage"
 
 import Play from "../resources/play.png"
 
@@ -14,7 +18,7 @@ const QuickLink = (props) => {
   )
 };
 
-const Nav = (props) => {
+const NavigationBar = (props) => {
   return (
     <div>
       <nav className = "menu-container">
@@ -24,9 +28,10 @@ const Nav = (props) => {
 
         <div className = "menu">
           <ul>
-            <QuickLink href = "#play" class = "">Games</QuickLink>
-            <QuickLink href = "#joins" class = "">Join</QuickLink>
-            <QuickLink href = "#rooms" class = "">Rooms</QuickLink>
+            <li> <Link to = {"#play"}>Games</Link> </li>
+            <li> <Link to = {"#join"}>Join</Link> </li>
+            <li> <Link to = {"#rooms"}>Rooms</Link> </li>
+            <li> <Link to = {"/login"} component = {<LoginPage />}>Login</Link> </li>
           </ul>
         </div>
       </nav>
@@ -38,7 +43,7 @@ export default class HomePage extends React.Component {
   render () {
     return (
       <div>
-        <Nav />
+        <NavigationBar />
       </div>
     );
   }

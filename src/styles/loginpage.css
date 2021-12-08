@@ -1,0 +1,131 @@
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #e9ebee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: sans-serif;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  padding: 20px;
+  height: 100%
+}
+
+.login, .register {
+  width: 50%
+}
+
+.login {
+  float: left;
+  background-color: #fafafa;
+  height: 100%;
+  border-radius: 10px 0 0 10px;
+  text-align: center;
+  padding-top: 100px;
+}
+
+.login h1 {
+  margin-bottom: 40px;
+  font-size: 2.5em;
+}
+
+input[type="email"], input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 30px;
+  border: none;
+  background-color: #eeeeef;
+}
+
+input[type="checkbox"] {
+  float: left;
+  margin-right: 5px;
+}
+
+.login span {
+  float: left
+}
+
+.login a {
+  float: right;
+  text-decoration: none;
+  color: #000;
+}
+
+.login a:hover {
+  color: #ed60bc;
+}
+
+.login button {
+  width: 100%;
+  margin: 30px 0;
+  border-radius: 8px;
+  text-shadow: 1px 1px 3px #666;
+  font-family: Arial;
+  color: #fffdff;
+  font-size: 16px;
+  background: #ed60bc;
+  padding: 8px 16px;
+  text-decoration: none;
+  border-width: 0
+}
+
+.login button:hover {
+  background: #fc96d5;
+  color: #fffdff !important;
+  transition: none
+}
+
+.login p {
+  display: inline-block;
+  margin: 0px 10px 30px;
+}
+
+.register {
+  float: right;
+  background-image: linear-gradient(135deg, #23212f 5%, #ed60bc 95%);
+  height: 100%;
+  color: #fff;
+  border-radius: 0 10px 10px 0;
+  text-align: center;
+  padding: 100px 0;
+}
+
+.register h2 {
+  margin: 30px 0;
+  font-size: 50px;
+  letter-spacing: 3px
+}
+
+.register p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.register a{
+  text-decoration: none;
+  background-color: transparent;
+  border: 1px solid #FFF;
+  border-radius: 20px;
+  padding: 10px 20px;
+  color: #fff;
+  font-size: 20px;
+  text-transform: uppercase;
+  transition: 0.2s all ease-in-out;
+}
+
+.register button:hover {
+  color: #ed60bc;
+  background-color: #fff;
+  cursor: pointer;
+}

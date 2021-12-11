@@ -1,0 +1,50 @@
+.chess {
+  display: flex;
+  flex-direction: row;
+}
+
+.board {
+  position: absolute;
+  margin: auto;
+  
+  height: 640px;
+  width: 640px;
+
+  border-style: ridge;
+  border-color: burlywood;
+  border-width: 20px;
+  
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.square {
+  background: transparent;
+  border-style: solid;
+  border-color: transparent;
+  border-radius: 5%;
+  height: 80px;
+  width: 80px;
+}
+
+.square:hover {
+  background-color: #aaffaa;
+}
+
+.light-square {
+  background-color: #c0c0d0;
+}
+
+.dark-square {
+  background-color: #b08044;
+}
+
+.attacked-square {
+  background-color: #ff9977;
+}
+
+.selected-square {
+  background-color: crimson !important;
+}

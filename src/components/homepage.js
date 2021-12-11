@@ -17,6 +17,8 @@ const NavigationBar = () => {
         </a>
 
         <div className = "menu">
+        <ul>
+        </ul>
           <ul>
             <li> <a href = "#play">Games</a> </li>
             <li> <a href = "#join">Join</a></li>
@@ -53,7 +55,7 @@ const Card = (props) => {
     <div className = {props.name}>
       <div className = "card_image">
         <img src = {props.src} alt = "card" />
-        
+
         <div className = "card_title title-black">
           <p>{props.children}</p>
         </div>
@@ -70,10 +72,10 @@ const Play = () => {
       </div>
 
       <div className = "cards-list">
-        <Card name = "card 1" src = {ChessImage}>Chess</Card>
-        <Card name = "card 2" src = {SnakeImage}><Link to = {"/snake"}>Snake</Link></Card>
-        <Card name = "card 3" src = {GameImage}>Random</Card>
-        <Card name = "card 4" src = {GameImage}>Random</Card>
+        <Link to = {"/chess"} style = {{textDecoration: "none",margin:"30px auto"}}><Card name = "card 1" src = {ChessImage}>Chess</Card></Link>
+        <Link to = {"/snake"} style = {{textDecoration: "none",margin:"30px auto"}}><Card name = "card 2" src = {SnakeImage}>Snake</Card></Link>
+        <Link to = {"/snake"} style = {{textDecoration: "none",margin:"30px auto"}}><Card name = "card 4" src = {GameImage}>Random</Card></Link>
+        <Link to = {"/snake"} style = {{textDecoration: "none",margin:"30px auto"}}><Card name = "card 3" src = {GameImage}>Random</Card></Link>
       </div>
     </div>
   );

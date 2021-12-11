@@ -6,6 +6,7 @@ import "../styles/loginpage.css"
 export default class LoginPage extends React.Component {
   render () {
     return (
+      <div className="bod">
       <div className = "LoginPage">
         <div className = "login">
           <div className = "container">
@@ -17,7 +18,7 @@ export default class LoginPage extends React.Component {
               <input type = "checkbox" /><span>Remember Me</span>
 
               <a href = "/login">Forgot Password</a>
-              
+
               <button type = "submit">Log In</button>
             </form>
 
@@ -31,6 +32,7 @@ export default class LoginPage extends React.Component {
             <Link to = {"/register"}>Register</Link>
           </div>
         </div>
+      </div>
       </div>
     );
   }

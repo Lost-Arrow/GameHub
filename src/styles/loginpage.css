@@ -1,17 +1,15 @@
 
-.LoginPage * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
 
-.LoginPage body {
+.bod{
   background: #e9ebee;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
   font-family: sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 .LoginPage .container {
@@ -31,7 +29,6 @@
   height: 100%;
   border-radius: 10px 0 0 10px;
   text-align: center;
-  padding-top: 100px;
 }
 
 .LoginPage .login h1 {
@@ -103,13 +100,14 @@
 
 .LoginPage .register h2 {
   margin: 30px 0;
-  font-size: 50px;
-  letter-spacing: 3px
+
+  letter-spacing: 3px;
+
 }
 
 .LoginPage .register p {
-  font-size: 18px;
-  margin-bottom: 30px;
+    font-size: 30px;
+  margin-bottom: 40px;
 }
 
 .LoginPage .register a{
@@ -122,9 +120,10 @@
   font-size: 20px;
   text-transform: uppercase;
   transition: 0.2s all ease-in-out;
+  margin-top: 40px;
 }
 
-.LoginPage .register button:hover {
+.LoginPage .register a:hover {
   color: #ed60bc;
   background-color: #fff;
   cursor: pointer;

@@ -6,6 +6,7 @@ import '../styles/registerpage.css'
 export default class RegisterPage extends React.Component {
   render () {
     return (
+      <div className="rebod">
       <div className = "RegisterPage">
         <div className = "register">
           <div className = "container">
@@ -30,6 +31,7 @@ export default class RegisterPage extends React.Component {
           </div>
         </div>
       </div>
+        </div>
     );
   }
 };

@@ -1,5 +1,4 @@
-
-.RegisterPage * {
+.rebod{
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -21,14 +20,10 @@
   height: 100%
 }
 
-.RegisterPage .register, .login {
-  width: 50%
-}
 
 .RegisterPage .register {
   float: left;
   background-color: #fafafa;
-  height: 100%;
   border-radius: 10px 0 0 10px;
   text-align: center;
   padding-top: 100px;
@@ -94,7 +89,6 @@
 .RegisterPage .login {
   float: right;
   background-image: linear-gradient(135deg, #23212f 5%, #ed60bc 95%);
-  height: 100%;
   color: #fff;
   border-radius: 0 10px 10px 0;
   text-align: center;
